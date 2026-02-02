@@ -39,6 +39,7 @@ jobs:
           port: 6419
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
+            docker login -u jaafarhadeg -p dckr_pat_RvWC87i5-aDEB20i_h8OROOXTJw
             docker pull $IMAGE_NAME:latest
             docker stop sasalm || true
             docker rm sasalm || true
