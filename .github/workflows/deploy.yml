@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/sasalm
+  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/firstworkflow
 
 jobs:
   build-push-deploy:
