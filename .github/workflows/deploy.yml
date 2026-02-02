@@ -12,7 +12,7 @@ jobs:
   build-push-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkouttt
         uses: actions/checkout@v4
 
       - name: Generate image tag
