@@ -34,8 +34,9 @@ jobs:
       - name: Deploy on Proxmox VM (pull & restart)
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.VM_HOST }}
-          username: ${{ secrets.VM_USER }}
+          host: 135.125.4.184 
+          username: tython
+          port: 6419
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
             docker pull $IMAGE_NAME:latest
